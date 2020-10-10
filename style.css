@@ -99,19 +99,24 @@ body {
 }
 
 .nav-c {
-  padding-top:12px;
+  font-family: 'Hiragino Maru Gothic Pro';
+  font-size: 14px;
+  padding-top:15px;
   color: #fff;
 }
 
 .nav-e {
+  font-family: Verdana;
+  font-weight: 600;
+  font-size: 5px;
   color: #fff;
 }
 
 #mainWrapper {
-  margin:0 auto 20px;
+  margin:0 auto;
   width:920px;
   height: 770px;
-  border: 1px solid #515151;
+  /* border: 1px solid #515151; */
   text-align:left;
 }
 
@@ -123,11 +128,12 @@ body {
 
 .left-contents {
   border: 1px solid #3c9796;
-  width: 250px;
+  width: 260px;
   height: 230px;
   border-radius: 5px 5px 0 0;
   margin-bottom: 20px;
   padding:0 ;
+  background-color:#ffffff
 }
 
 .side-contents {
@@ -142,6 +148,7 @@ body {
 }
 
 .side-title {
+  font-family: 'Hiragino Maru Gothic Pro';
   padding: 8px 10px;
   /* margin-top: 5px; */
   /* border: 1px solid #515151; */
@@ -152,6 +159,7 @@ body {
   /* border:1px solid #515151; */
   padding: 0 0 0 10px;
   margin-top: 0px;
+  
 }
 
 .rhombus {
@@ -162,7 +170,8 @@ body {
 .treatment-list {
   padding: 10px 5px 10px 0;
   font-size:85%;
-  color:  #383838;
+  font-family: 'Hiragino Maru Gothic Pro';
+  color: #515151;
   border-bottom:1px solid #6CC6C4;
   width: 220px;
 }
@@ -177,13 +186,14 @@ body {
 .aesthetic-list {
   padding: 10px 5px 10px 0;
   font-size:85%;
-  color:  #383838;
+  font-family: 'Hiragino Maru Gothic Pro';
+  color: #515151;
   border-bottom:1px solid #6CC6C4;
   width: 220px;
 }
 
 .main-right {
-  padding: 0 0 0 27px;
+  padding: 0 0 0 18px;
   /* border: 1px solid #515151; */
 }
 
@@ -202,6 +212,8 @@ body {
 }
 
 .new-information {
+  font-family: 'Hiragino Maru Gothic Pro';
+  color: #515151;
   width: 600px;
   margin: 0 0 0 15px;
   padding-bottom: 15px;
@@ -227,15 +239,17 @@ body {
 }
 
 .day {
-  font-size: 12px;
+  font-family: Verdana;
+  color: #515151;
+  font-size: 13px;
   margin-right: 10px;
   display: flex;
   align-items: center;
 }
-  /* border: 1px solid #515151;
-} */
 
 p {
+  font-family: 'Hiragino Maru Gothic Pro';
+  color: #515151;
   font-size: 13px;
   padding-left: 10px;
   margin-top: 25px;
@@ -257,20 +271,58 @@ p {
 
 
 .home-rn {
+  font-family: 'Hiragino Maru Gothic Pro';
+  color: #515151;
   font-size: 13px;
   padding-left: 10px;
 }
 
-/* .day-last {
-
-
+#footerWrapper {
+  margin:0 auto 20px;
+  width:920px;
 }
 
-.home-rn {
-  font-size: 13px;
-  padding-left: 10px;
+#footer {
+  width: 920px;
+  color: #313131;
+}
+
+.nav-b {
+  font-family: 'Hiragino Maru Gothic Pro';
+  color: #ffffff;
   display: flex;
   align-items: center;
+  list-style: none;
+  background-color: #6CC6C4;
+  height: 30px;
+  margin-top: 0;
+  padding-left: 10px;
+  font-size: 13px;
+  border-radius: 5px 5px 5px 5px;
 }
-/* .left-contents {
-  flex-direction: column; */
+
+.nav-bc {
+  padding-right: 20px;
+}
+
+.round {
+  font-size: 100%;
+  padding-right: 5px;
+}
+
+.address {
+  text-align: right;
+  font-family: 'Hiragino Maru Gothic Pro';
+  color: #515151;
+  font-size: 13px;
+  font-weight: 700;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #6CC6C4;
+}
+
+.copyright {
+  font-family: 'Hiragino Maru Gothic Pro';
+  text-align: center;
+  font-size: 12px;
+  padding: 10px 0;
+}
