@@ -12,6 +12,7 @@ body {
   margin:0;
   padding:0;
   border-top:solid 8px #6CC6C4;
+  
 }
 
 #headerWrapper {
@@ -23,24 +24,32 @@ body {
 /* ヘッダー設定 */
 #header {
   height:200px;
-  position:relative;
+}
+
+.up {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom:10px;
 }
 
 .siteTitle {
-  position: absolute;
   top:50px;
   left:0px
-  font-weight:normal;
-  margin:0;
+  font-weight: normal;
+  margin:50px 0 0 0;
   padding:0;
 }
 
 /* 概要 */
+
+.right-up-content {
+  margin-top: 10px;
+}
+
 .description {
-	position:absolute;
 	top:10px;
 	right:0px;
-	margin:0;
+	margin-bottom:10px;
 	padding:0;
 	font-size:65%;
   text-align:right;
@@ -48,7 +57,6 @@ body {
 }
 
 .header-tel {
-  position: absolute;
   top: 40px;
   right:0px;
   margin:0;
@@ -59,9 +67,6 @@ body {
 }
 
 .reserve-time {
-  position: absolute;
-  top: 80px;
-  right:0px;
   margin:0px;
   padding: 5px 20px;
   font-size: 65%;
@@ -79,13 +84,10 @@ body {
   align-items: center;
   justify-content: space-around;
   list-style: none;
-  position: absolute;
-  top: 130px;
-  left:0px;
   margin:0px;
   padding: 0px;
   background-color: #6CC6C4;
-  width: 100%;
+  width: 920px;
   height:70px;
   border-radius: 5px;
   border: 1px solid #3c9796;
@@ -94,6 +96,7 @@ body {
 .nav li {
   border: 1px solid #3c9796;
   text-align: center;
+  flex-grow: 1;
   height: 70px;
   width: 184px;
 }
@@ -115,50 +118,46 @@ body {
 #mainWrapper {
   margin:0 auto;
   width:920px;
-  height: 770px;
-  /* border: 1px solid #515151; */
+  height: 725px;
   text-align:left;
 }
 
 
 .main {
   display: flex;
-  /* flex-direction: row; */
+}
+
+.main-left {
+  display: block;
+  margin: 0 0 0 0;
 }
 
 .left-contents {
-  border: 1px solid #3c9796;
   width: 260px;
   height: 230px;
+  border: 1px solid #3c9796;
   border-radius: 5px 5px 0 0;
-  margin-bottom: 20px;
+  margin:0 0 20px 0;
   padding:0 ;
   background-color:#ffffff
 }
 
 .side-contents {
-  /* width: 100%; */
   height: 40px;
   background-color: #6CC6C4;
   color: #fff;
-  /* display: flex; */
-  /* align-items: center; */
   padding-left: 5px;
-  /* border: 1px solid #515151; */
 }
 
 .side-title {
   font-family: 'Hiragino Maru Gothic Pro';
   padding: 8px 10px;
-  /* margin-top: 5px; */
-  /* border: 1px solid #515151; */
 }
 
 .treatments {
   list-style: none;
-  /* border:1px solid #515151; */
   padding: 0 0 0 10px;
-  margin-top: 0px;
+  margin: 0px;
   
 }
 
@@ -178,7 +177,6 @@ body {
 
 .aesthetics {
   list-style: none;
-  /* border:1px solid #515151; */
   padding: 0 0 0 10px;
   margin-top: 0;
 }
@@ -194,19 +192,16 @@ body {
 
 .main-right {
   padding: 0 0 0 18px;
-  /* border: 1px solid #515151; */
 }
 
 .main-image{
   height: 280px;
   width: 640px;
-  /* border: 1px solid #515151; */
 }
 
 .main-information {
-  /* border: 1px solid #515151; */
   background-color: #ffffff;
-  height: 430px;
+  height: 385px;
   padding-top: 35px;
   border-radius: 0 0 5px 5px;
 }
@@ -215,27 +210,29 @@ body {
   font-family: 'Hiragino Maru Gothic Pro';
   color: #515151;
   width: 600px;
-  margin: 0 0 0 15px;
+  margin: 0 0 20px 15px;
   padding-bottom: 15px;
   border-bottom: 3px solid #6CC6C4;
-  /* border: 1px solid #515151; */
 }
 
 .info-contents {
   list-style: none;
   padding-left: 15px;
   margin-top: 0;
-  /* display: flex; */
-  /* border: 1px solid #515151; */
 }
 
-.info-content {
-  display: flex;
-  height: 75px;
-  width: 600px;
-  /* padding-bottom: 30px; */
-  /* padding: 10px 0; */
-  border-bottom: 1px dotted #adabab;
+dl {
+  margin: 0 0 15px;
+  padding: 0 10px 10px;
+}
+
+dt {
+  float: left;
+  width: 143px;
+  padding: 10px 0;
+  font-weight: bold;
+  line-height: 200%;
+  margin:0;
 }
 
 .day {
@@ -243,47 +240,28 @@ body {
   color: #515151;
   font-size: 13px;
   margin-right: 10px;
-  display: flex;
-  align-items: center;
 }
 
-p {
+dd {
   font-family: 'Hiragino Maru Gothic Pro';
   color: #515151;
   font-size: 13px;
-  padding-left: 10px;
-  margin-top: 25px;
-  /* display: flex;
-  align-items: center; */
-  /* border: 1px solid #515151; */
-}
-
-.info-content-f {
-  display: flex;
-  align-items: center;
-  height: 40px;
-  width: 600px;
-  border-bottom: 1px dotted #adabab;
-  /* padding-bottom: 30px; */
-  /* padding: 10px 0; */
-  /* border-bottom: 1px dotted #adabab; */
-}
-
-
-.home-rn {
-  font-family: 'Hiragino Maru Gothic Pro';
-  color: #515151;
-  font-size: 13px;
-  padding-left: 10px;
+  width: 75%;
+  margin: 0;
+  padding: 10px 10px 10px 143px;
+  border-bottom: 1px #CCCCCC dotted;
 }
 
 #footerWrapper {
-  margin:0 auto 20px;
-  width:920px;
+  margin:0 ;
+  text-align:center;
+  width:100%;
+  height: 130px;
 }
 
 #footer {
   width: 920px;
+  margin: 0 auto;
   color: #313131;
 }
 
@@ -294,14 +272,15 @@ p {
   align-items: center;
   list-style: none;
   background-color: #6CC6C4;
-  height: 30px;
   margin-top: 0;
   padding-left: 10px;
   font-size: 13px;
-  border-radius: 5px 5px 5px 5px;
+  border-radius: 5px;
 }
 
 .nav-bc {
+  height: 30px;
+  line-height: 30px;
   padding-right: 20px;
 }
 
@@ -315,7 +294,6 @@ p {
   font-family: 'Hiragino Maru Gothic Pro';
   color: #515151;
   font-size: 13px;
-  font-weight: 700;
   padding-bottom: 10px;
   border-bottom: 2px solid #6CC6C4;
 }
@@ -326,3 +304,4 @@ p {
   font-size: 12px;
   padding: 10px 0;
 }
+
